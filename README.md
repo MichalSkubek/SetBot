@@ -14,11 +14,15 @@ python -m venv venv
 
 Windows:
 
-``` .\venv\Scripts\activate```
+``` 
+.\venv\Scripts\activate
+```
 
 Linux:
 
-```. venv/bin/activate```
+```
+. venv/bin/activate
+```
 
 4. Install requirements
 ```
@@ -30,3 +34,9 @@ pip install -r requirements.txt
 ```
 python main.py
 ```
+
+## Usage
+Use on your own responsibility. I don't care if you get banned. *This bot doesn't try to hide anything.*
+
+![7BTofXnDmq](https://user-images.githubusercontent.com/63967868/120119327-6bef4f00-c197-11eb-999c-09719e452b95.jpg)
+
