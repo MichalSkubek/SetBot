@@ -11,10 +11,15 @@ git@github.com:MichalSkubek/SetBot.git
 python -m venv venv
 ```
 3.* Activate venv
+
 Windows:
+
 ``` .\venv\Scripts\activate```
+
 Linux:
+
 ```. venv/bin/activate```
+
 4. Install requirements
 ```
 pip install -r requirements.txt
