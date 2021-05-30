@@ -39,9 +39,8 @@ class ScreenReader:
         if image.getpixel((image.width/2, 16)) == (255, 255, 255):
             if image.getpixel((66, 55)) == (255, 255, 255):
                 # Check neighbour pixels for 100% accuracy
-                w = int(image.width/2)
-                for h in range(10, 20):
-                    if image.getpixel((w, h)) != (255, 255, 255):
+                for h in range(50, 60):
+                    if image.getpixel((66, h)) != (255, 255, 255):
                         return 'shaded'
                 return 'hollow'
             elif image.getpixel((66, 55))[2] in (1, 2, 128):
@@ -106,7 +105,7 @@ class ScreenReader:
         x_beetween = 13
         y_beetween = 13
         cards = list()
-        for row in range(4):
+        for row in range(5):
             cont = True
             for column in range(3):
                 x_1 = screen_x_1 + column * (width + x_beetween)

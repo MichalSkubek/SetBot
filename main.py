@@ -8,7 +8,10 @@ if __name__ == "__main__":
     clicker = ScreenClicker()  # Screen Clicker with default parameters
     # keyboard.add_hotkey('ctrl+q', lambda: quit(0))
     game = Game()
-    if str(input('A-Auto M-Manual: ')) == 'A':
+    mode = 'x'
+    while mode != 'a' and mode != 'm':
+        mode = str(input('A-Auto M-Manual: ')).lower()
+    if mode == 'a':
         in_row = 0
         while True:
             game.set_list(ScreenReader().get_cards_from_screen())
@@ -22,7 +25,7 @@ if __name__ == "__main__":
             if in_row == 10:
                 break
 
-    else:
+    elif mode == 'm':
         print("(ROW, COLUMN), starting with 1")
         while str(input('\t> Q -> LEAVE\n\t> ENTER -> NEW SET\n')) != 'q':
             game.set_list(ScreenReader().get_cards_from_screen())
