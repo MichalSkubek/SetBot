@@ -6,11 +6,11 @@ This repository contains updated version of SetBot.
 ```
 git@github.com:MichalSkubek/SetBot.git
 ```
-2*. Create venv
+2.* Create venv
 ```
 python -m venv venv
 ```
-3*. Activate venv
+3.* Activate venv
 >Windows:
 >``` .\venv\Scripts\activate```
 >Linux:
